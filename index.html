@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerConnect - Jobs & Internships</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>CareerConnect</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#jobs">Opportunities</a>
+      <a href="#saved">Saved Jobs</a>
+      <a href="#tracker">My Applications</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="tagline">YOUR CAREER STARTS HERE</p>
+    <h1>Find Your Next <span>Opportunity</span></h1>
+    <p>Explore jobs and internships, save your favourites
+      and manage your application progress in one place.</p>
+    <a href="#jobs" class="btn">Explore Opportunities</a>
+  </section>
+
+  <section class="container" id="jobs">
+    <h2>Explore Opportunities</h2>
+    <p class="subtitle">Find an opportunity that matches your skills.</p>
+
+    <div class="filters">
+      <input type="text" id="searchInput"
+        placeholder="Search job, company or skill">
+
+      <select id="typeFilter">
+        <option value="All">All Types</option>
+        <option value="Internship">Internship</option>
+        <option value="Full-time">Full-time</option>
+      </select>
+
+      <select id="modeFilter">
+        <option value="All">All Modes</option>
+        <option value="Remote">Remote</option>
+        <option value="Hybrid">Hybrid</option>
+        <option value="On-site">On-site</option>
+      </select>
+    </div>
+
+    <div id="jobList" class="job-grid"></div>
+    <p id="emptyMessage" class="empty hidden">
+      No matching opportunities found.
+    </p>
+  </section>
+
+  <section class="container alternate" id="saved">
+    <h2>Saved Opportunities</h2>
+    <div id="savedList" class="job-grid"></div>
+  </section>
+
+  <section class="container" id="tracker">
+    <h2>My Application Tracker</h2>
+    <p class="subtitle">Keep track of your application progress.</p>
+    <div id="applicationList"></div>
+  </section>
+
+  <footer>
+    <h3>CareerConnect</h3>
+    <p>A student project built with HTML, CSS and JavaScript.</p>
+    <p>Demo listings only — verify vacancies before applying.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
